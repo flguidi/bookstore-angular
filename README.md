@@ -1,27 +1,20 @@
-# Bookmarket
+# Seminario "Introducción a Angular" (TUDAI, UNICEN)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+## BookMarket
+El proyecto Angular realizado para el seminario consiste en un e-commerce de libros llamado "BookMarket". El mismo consta de dos secciones:
+1. Una sección "Inicio", la cual contiene con una lista de libros (donde se indican sus datos y la cantidad a comprar deseada) y un carrito de compras.
+2. Una sección "Nosotros", con datos sobre la tienda.
 
-## Development server
+## Tecnologías utilizadas
+- Angular: Framework de desarrollo front-end para la creación de aplicaciones web (v18.0.6).
+- Bootstrap: Framework de CSS para el diseño responsive y la maquetación de la interfaz de usuario (v5.3).
+- MockAPI: Simulación de datos de libros (URL: https://6691ae6d26c2a69f6e90710c.mockapi.io/api/books).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Datos del alumno
+- **Apellido y nombre: ** Guidi, Franco Leonardo
+- **DNI: ** 37016003
+- **e-mail:** francoleonardoguidi@gmail.com
+- **Sede: ** Tandil
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Link a StackBlitz
+https://stackblitz.com/~/github.com/flguidi/bookstore-angular
