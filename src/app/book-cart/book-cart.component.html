@@ -1,0 +1,10 @@
+<h3>Carrito</h3>
+<ul class="list-group">
+    @for (book of cartList; track book.id) {
+        @if (book.quantity > 0) {
+            <li class="list-group-item">
+                <span class="fw-bold">{{ book.title }}</span> (Cantidad: {{ book.quantity }})
+            </li>
+        }
+    }
+</ul>

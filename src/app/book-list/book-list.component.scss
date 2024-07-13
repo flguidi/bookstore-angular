@@ -1,0 +1,23 @@
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr.clearance {
+    border: 2px solid rgb(160, 178, 255);
+}
+
+tr.clearance td {
+    background-color: #bbd6ff;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cart-button {
+    text-align: center;
+    width: 4rem;
+}
+

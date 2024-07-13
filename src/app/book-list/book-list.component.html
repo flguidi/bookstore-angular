@@ -1,0 +1,41 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Título</th>
+			<th>Autor/a</th>
+			<th>Género</th>
+			<th>Editorial</th>
+			<th>Año</th>
+			<th>Precio</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (book of books; track book.id) {
+			<tr [ngClass]="{'clearance': book.clearance}">
+				<td><img width="100" class="img-fluid" [src]="book.image" [alt]="book.title"></td>
+				<td>{{ book.title }}</td>
+				<td>{{ book.author }}</td>
+				<td>{{ book.genre }}</td>
+				<td>{{ book.publisher }}</td>
+				<td>{{ book.year }}</td>
+				<td>{{ book.price | currency }}</td>
+				<td>
+					@if (book.stock <= 0) { 
+						<span class="badge text-bg-warning">SIN STOCK</span>
+					} @else {
+						<app-input-integer 
+							[(quantity)]="book.quantity" 
+							[max]="book.stock" 
+							(maxReached)="maxReached($event)">
+						</app-input-integer>
+						<button class="btn btn-primary cart-button" (click)="addToCart(book)">
+							<img class="icon" src="assets/img/cart-plus.png" alt="Agregar al carrito">
+						</button>
+					}
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

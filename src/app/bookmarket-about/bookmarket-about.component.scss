@@ -1,0 +1,20 @@
+
+.vertically-centered > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.4rem;
+}
+
+img {
+    width: 100%;
+}
+

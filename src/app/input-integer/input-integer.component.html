@@ -1,0 +1,6 @@
+<div class="input-group mb-3">
+    <button class="btn btn-outline-primary btn-xs" type="button" (click)="downQuantity()">-</button>
+    <input type="number" min="0" [max]="max" step="1" class="form-control" 
+        (keyup)="setQuantity($event)" [(ngModel)]="quantity">
+    <button class="btn btn-outline-primary btn-xs" type="button" (click)="upQuantity()">+</button>
+</div>
